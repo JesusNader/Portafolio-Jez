@@ -39,7 +39,7 @@ nav .navbar-container .navbar-name-jez {
 nav .navbar-container .menu-icon-container {
   width: 34px;
   height: 34px;
-  background-image: url(/assets/icons/menu-icon-mobile.svg);
+  background-image: url(../assets/icons/menu-icon-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -83,7 +83,7 @@ nav .navbar-container .navbar-menu-container .navbar-menu .navbar-menu-arrow-ico
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-image: url(/assets/icons/arrow.svg);
+  background-image: url(../assets/icons/arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 3px;
