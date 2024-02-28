@@ -1,0 +1,142 @@
+$color1: #c5f3f7;
+$color2: #7ba4fc;
+$color3: #4260a9;
+$color4: #142545;
+$color5: #140f07;
+$color6: #fff;
+$color7: #000;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+.inactive{
+    display: none;
+}
+
+// Navbar
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: $color3;
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        .navbar-logo{
+            a{
+                img{
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+
+        .navbar-name-jez{
+            color: $color6;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    
+        .menu-icon-container{
+            width: 34px;
+            height: 34px;
+            background-image: url(/assets/icons/menu-icon-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .navbar-menu-container{
+            position: absolute;
+            right: 0px;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            .navbar-background-opacity{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            .navbar-menu{
+                position: absolute;
+                right: 0;
+                width: 190px;
+                height: 100%;
+                background-color: $color6;
+                border-end-start-radius: 15px;
+                border-start-start-radius: 15px;
+                list-style: none;
+                
+                .navbar-menu-arrow-icon{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    top: 45%;
+                    right: 174px;
+                    width: 24px;
+                    height: 50px;
+                    background-color: $color6;
+                    border-radius: 14px;
+                    span{
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        background-image: url(/assets/icons/arrow.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position-x: 3px;
+                        background-position-y: center;
+                        // transition: .5s;
+                    }
+                    // Hacer que se vea la transición en mobile (no se ve)
+                    // span:hover{
+                    //     transform: rotate(180deg);
+                    //     transition: .5s;
+                    // }
+                }
+                li{
+                    width: 90%;
+                    padding: 10px 0;
+                    margin: 0 auto;
+                    text-align: center;
+                    .navbar-menu-about{
+                        display: inline-block;
+                        width: 90%;
+                        padding: 20px 0 20px 0;
+                        border-bottom: 2px solid $color3;
+                        color: $color2;
+                        font-size: 1.6rem;
+                    }
+                    a{
+                        display: inline-block;
+                        padding: 30px 0 2px 0;
+                        color: $color7;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        text-decoration: none;
+                        transition: .2s;
+                    }
+                    a:hover{
+                        color: $color2;
+                        border-bottom: 2px solid $color2;
+                        transition: .2s;
+                    }
+                }
+            }
+        }
+    }
+}
